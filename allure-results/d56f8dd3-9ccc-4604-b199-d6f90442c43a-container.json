@@ -1,0 +1,1 @@
+{"uuid":"d56f8dd3-9ccc-4604-b199-d6f90442c43a","name":"WebAutomation","children":["3ae121fc-81f0-47be-8d2e-4ddfbea0403e"],"befores":[{"name":"OpenBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1722997686536,"stop":1722997691264}],"afters":[],"start":1722997686499,"stop":1722997700029}
