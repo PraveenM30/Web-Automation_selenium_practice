@@ -1,0 +1,218 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc605e1be9, pid=5536, tid=15748
+#
+# JRE version:  (17.0.11+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.11+9-adhoc..jdk17u, mixed mode, sharing, tiered, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1be9]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 15G,  Windows 11 , 64 bit Build 22621 (10.0.22621.3958)
+Time: Mon Aug 19 13:33:13 2024 India Standard Time elapsed time: 0.013026 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x0000002ab8400000,0x0000002ab8500000],  sp=0x0000002ab84fd650,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1be9]
+C  [jimage.dll+0x1d77]
+C  [jimage.dll+0x2655]
+V  [jvm.dll+0x1f2f8a]
+V  [jvm.dll+0xb0ade]
+V  [jvm.dll+0x7e474c]
+V  [jvm.dll+0x3ef9cf]
+V  [jvm.dll+0x3f1521]
+C  [jli.dll+0x528f]
+C  [ucrtbase.dll+0x29333]
+C  [KERNEL32.DLL+0x1257d]
+C  [ntdll.dll+0x5af28]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000000000001b9c0
+
+
+Registers:
+RAX=0x0000000000006e69, RBX=0x0000002ab84fd741, RCX=0x00007ffc605e6000, RDX=0x0000000000006e69
+RSP=0x0000002ab84fd650, RBP=0x0000002ab84fd740, RSI=0x0000000000008cc5, RDI=0x0000002ab84fd740
+R8 =0x00007ffc605e4288, R9 =0x000000000000001c, R10=0x00007ffc587f0000, R11=0x00007ffc605e6000
+R12=0x0000000000000000, R13=0x0000000000000000, R14=0x0000002ab84fe7b0, R15=0x00007ffbd03e7da8
+RIP=0x00007ffc605e1be9, EFLAGS=0x0000000000010246
+
+
+Top of Stack: (sp=0x0000002ab84fd650)
+0x0000002ab84fd650:   0000020ff3310150 00000000e70004e3
+0x0000002ab84fd660:   0000020ff3170bbc 0000020ff55b0000
+0x0000002ab84fd670:   0000020ff340a1a0 00007ffc605e1d77
+0x0000002ab84fd680:   000000000000000b 0000020ff340a1a0
+0x0000002ab84fd690:   00000000000006f5 00000000000006f5
+0x0000002ab84fd6a0:   0000020ff350bd00 0000020ff350823d
+0x0000002ab84fd6b0:   0000002ab84fd750 0000002ae70004e3
+0x0000002ab84fd6c0:   0000020ff331007c 0000020ff3310150
+0x0000002ab84fd6d0:   0000000000000005 0000a3dc67f8102a
+0x0000002ab84fd6e0:   000005d0117ad7d0 0000020ff3310150
+0x0000002ab84fd6f0:   00007ffbd03c6840 0000000000000017
+0x0000002ab84fd700:   0000020ff340a1a0 0000002ab84fe7b0
+0x0000002ab84fd710:   000000000000000b 00007ffc605e2655
+0x0000002ab84fd720:   0000020ff3310000 00007ffce70004e3
+0x0000002ab84fd730:   00000000000006a7 0000020ff55e6560
+0x0000002ab84fd740:   61622e6176616a2f 692f6b646a2f6573
+0x0000002ab84fd750:   2f6c616e7265746e 6f6974706f2f6d76
+0x0000002ab84fd760:   0000020ff300736e 0000020ff55e6fc0
+0x0000002ab84fd770:   0000020f000003ff 00000000000006a7
+0x0000002ab84fd780:   0000020ff55b0000 0000020f05010004
+0x0000002ab84fd790:   00000000000005eb 0000000000005eb0
+0x0000002ab84fd7a0:   0000020ff331007c 0000020ff3310150
+0x0000002ab84fd7b0:   0000020ff55e6550 00007ffce70004e3
+0x0000002ab84fd7c0:   0000020ff3310000 0000002a02000002
+0x0000002ab84fd7d0:   0000000000000000 0000000000000000
+0x0000002ab84fd7e0:   0000020ff3310150 0000020ff55ec400
+0x0000002ab84fd7f0:   0000000000000000 0000000000000000
+0x0000002ab84fd800:   00000000000000bc 00007ffc6c8b471a
+0x0000002ab84fd810:   0000020ff3313ca0 0000002ab84fdb49
+0x0000002ab84fd820:   0000020ff3310000 00000000000000bc
+0x0000002ab84fd830:   0000020ff55ec410 0000020ff55ec400
+0x0000002ab84fd840:   0000020ff33102c0 00007ffc6c8af956 
+
+Instructions: (pc=0x00007ffc605e1be9)
+0x00007ffc605e1ae9:   48 85 c9 74 1d 80 3d 1b 45 00 00 00 74 06 48 8b
+0x00007ffc605e1af9:   53 18 eb 04 48 8b 53 40 e8 ae 0e 00 00 48 83 63
+0x00007ffc605e1b09:   48 00 8b 4b 0c 83 f9 ff 74 09 e8 e4 0c 00 00 83
+0x00007ffc605e1b19:   4b 0c ff 48 8b 4b 70 48 85 c9 74 0f ba 10 00 00
+0x00007ffc605e1b29:   00 e8 fd 0e 00 00 48 83 63 70 00 48 83 c4 20 5b
+0x00007ffc605e1b39:   c3 cc cc 40 53 48 83 ec 20 48 8b d9 48 8d 0d d4
+0x00007ffc605e1b49:   46 00 00 e8 b3 0c 00 00 83 6b 08 01 75 24 48 8b
+0x00007ffc605e1b59:   d3 48 8d 0d b7 44 00 00 e8 22 08 00 00 48 8b cb
+0x00007ffc605e1b69:   e8 de fe ff ff ba 78 00 00 00 48 8b cb e8 b1 0e
+0x00007ffc605e1b79:   00 00 48 8d 0d 9e 46 00 00 48 83 c4 20 5b e9 80
+0x00007ffc605e1b89:   0c 00 00 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffc605e1b99:   ec 20 41 8b f1 4d 8b c8 48 8b fa 4c 8b d9 4d 85
+0x00007ffc605e1ba9:   c0 74 78 85 f6 74 74 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffc605e1bb9:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffc605e1bc9:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 4d
+0x00007ffc605e1bd9:   8b 03 0f ba f0 1f 33 d2 49 8b cb f7 f6 48 63 c2
+0x00007ffc605e1be9:   41 8b 14 81 41 ff 50 08 85 c0 7e 24 8a 0f eb 10
+0x00007ffc605e1bf9:   69 c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3
+0x00007ffc605e1c09:   84 c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 0e
+0x00007ffc605e1c19:   79 09 83 c9 ff 2b c8 8b c1 eb 03 83 c8 ff 48 8b
+0x00007ffc605e1c29:   5c 24 30 48 8b 74 24 38 48 83 c4 20 5f c3 cc 48
+0x00007ffc605e1c39:   89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b
+0x00007ffc605e1c49:   f1 48 8d 0d cf 45 00 00 e8 ae 0b 00 00 33 ff 39
+0x00007ffc605e1c59:   3d ba 43 00 00 76 24 48 8b 05 b9 43 00 00 48 8b
+0x00007ffc605e1c69:   d6 48 8b 1c f8 48 8b 0b e8 64 1e 00 00 85 c0 74
+0x00007ffc605e1c79:   2b ff c7 3b 3d 96 43 00 00 72 dc 33 db 48 8d 0d
+0x00007ffc605e1c89:   93 45 00 00 e8 7a 0b 00 00 48 8b 74 24 38 48 8b
+0x00007ffc605e1c99:   c3 48 8b 5c 24 30 48 83 c4 20 5f c3 ff 43 08 eb
+0x00007ffc605e1ca9:   dc cc cc 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffc605e1cb9:   ec 20 48 8b d9 48 8b f2 48 8b 49 10 49 8b f8 8b
+0x00007ffc605e1cc9:   53 30 48 8b 01 ff 50 20 4c 8b 43 50 48 8b d6 48
+0x00007ffc605e1cd9:   8b 4b 10 44 8b c8 e8 a8 fe ff ff 83 f8 ff 74 38 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff79d4b0000 - 0x00007ff79d4be000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\java.exe
+0x00007ffc6c870000 - 0x00007ffc6ca87000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc6b780000 - 0x00007ffc6b844000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc69fb0000 - 0x00007ffc6a35d000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc69d70000 - 0x00007ffc69e81000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc58810000 - 0x00007ffc58827000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\jli.dll
+0x00007ffc587f0000 - 0x00007ffc5880b000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\VCRUNTIME140.dll
+0x00007ffc6aa40000 - 0x00007ffc6abee000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc4b300000 - 0x00007ffc4b593000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955\COMCTL32.dll
+0x00007ffc6c430000 - 0x00007ffc6c4d7000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc6a360000 - 0x00007ffc6a386000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc6c700000 - 0x00007ffc6c729000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc69c50000 - 0x00007ffc69d69000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc69f10000 - 0x00007ffc69faa000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc6af30000 - 0x00007ffc6af61000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000020ff3500000 - 0x0000020ff3514000 	C:\WINDOWS\System32\umppc18513.dll
+0x00007ffc641c0000 - 0x00007ffc641cc000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\vcruntime140_1.dll
+0x00007ffc1fa90000 - 0x00007ffc1fb1d000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\msvcp140.dll
+0x00007ffbcfab0000 - 0x00007ffbd0712000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\server\jvm.dll
+0x00007ffc6c4e0000 - 0x00007ffc6c592000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc6ae70000 - 0x00007ffc6af19000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc6a390000 - 0x00007ffc6a3b8000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffc6c0c0000 - 0x00007ffc6c1d4000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc69a50000 - 0x00007ffc69a9d000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffc62820000 - 0x00007ffc62829000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc6c290000 - 0x00007ffc6c301000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc5f790000 - 0x00007ffc5f7c4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc5f0c0000 - 0x00007ffc5f0ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc69a30000 - 0x00007ffc69a43000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffc68bc0000 - 0x00007ffc68bd8000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc605e0000 - 0x00007ffc605ea000 	C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\jimage.dll
+0x00007ffc67450000 - 0x00007ffc67682000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc6b3f0000 - 0x00007ffc6b77d000 	C:\WINDOWS\System32\combase.dll
+0x00007ffc6a950000 - 0x00007ffc6aa27000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffc41240000 - 0x00007ffc41272000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc69e90000 - 0x00007ffc69f0b000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955;C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11
+PATH=C:\Program Files\Maven\apache-maven-3.9.4\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\user\AppData\Local\Android\Sdk\platform-tools;C:\Users\user\AppData\Local\Android\Sdk\tools\bin;C:\Users\user\AppData\Local\Android\Sdk\tools\lib\x86_64;C:\Users\user\AppData\Local\Android\Sdk;C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin;C:\Users\user\AppData\Local\Android\Sdk\tools;C:\apache-maven-3.9.4\bin;C:\Program Files\Git\cmd;C:\Users\user\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Users\user\AppData\Local\Programs\FireFlinkClient\resources\flinko-client\utilities\jdk-11;C:\Users\user\AppData\Local\Programs\FireFlinkClient\resources\flinko-client\utilities\jdk-11\bin;C:\Program Files\nodejs;C:\Users\user\AppData\Local\Android\Sdk\tools;C:\Users\user\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin;;
+USERNAME=Parveen M
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+TMP=C:\Users\user\AppData\Local\Temp
+TEMP=C:\Users\user\AppData\Local\Temp
+
+
+
+Periodic native trim disabled
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.3958)
+OS uptime: 0 days 6:54 hours
+
+CPU: total 8 (initial active 0) 
+Processor Information for all 8 processors :
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+
+Memory: 4k page, system-wide physical 16064M (4006M free)
+TotalPageFile size 27840M (AvailPageFile size 11778M)
+current process WorkingSet (physical memory assigned to process): 8M, peak: 8M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.11+9-adhoc..jdk17u) for windows-amd64 JRE (17.0.11+9-adhoc..jdk17u), built on Apr 19 2024 08:33:45 by "" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.

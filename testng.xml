@@ -1,8 +1,14 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SampleSuite">
-    <test name="SampleTest">
-        <packages>
-            <package name="shadowDOMjavaScriptExecutor"/>
-        </packages>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/user/intelij Workspace/WebAutomation/src/test/java/iFrame/A_IF1.java">
+        <classes>
+            <class name="iFrame.A_IF1">
+                <methods>
+                    <include name="Wh1"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>
