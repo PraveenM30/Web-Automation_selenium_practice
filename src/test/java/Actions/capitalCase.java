@@ -1,6 +1,5 @@
 package Actions;
 
-import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,11 +9,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+
 public class capitalCase {
 
     @Test
     @Description
-    public void Capitalcase() throws InterruptedException {
+    
+    public static void main(String[] args) throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--guest");
         WebDriver driver = new ChromeDriver(options);
